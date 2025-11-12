@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viva o Melhor de Três Coroas | Apartamento Premium 142m²</title>
-    <meta name="description" content="Viva o melhor de Três Coroas com conforto e vista deslumbrante para as montanhas! Apartamento 142m² com 3 suítes, localização privilegiada e valorização garantida.">
+    <title>Apartamento Premium em Três Coroas - R$ 490.000 | RI Construtora</title>
+    <meta name="description" content="Apartamento de 142m² com 3 suítes, vista para montanhas. Valor R$ 490.000,00 – Estudamos condições de pagamento.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
@@ -38,8 +38,8 @@
         /* Header/Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(135deg, rgba(44, 95, 45, 0.9), rgba(151, 192, 92, 0.8)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c5f2d" width="1200" height="800"/><path fill="%2397c05c" opacity="0.1" d="M0 400 Q300 200 600 400 T1200 400 V800 H0 Z"/></svg>');
+            background: linear-gradient(135deg, rgba(44, 95, 45, 0.7), rgba(151, 192, 92, 0.6)),
+                        url('https://lh3.googleusercontent.com/d/1F71eYJO2_AZj68FhMeVFzTeQNP-oHyLb');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -55,12 +55,14 @@
             max-width: 900px;
             padding: 2rem;
             animation: fadeInUp 1s ease-out;
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
         }
 
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             line-height: 1.2;
         }
 
@@ -75,6 +77,15 @@
             color: var(--accent-color);
             font-weight: 600;
             margin: 1.5rem 0;
+        }
+
+        .hero .price-info {
+            background: rgba(0,0,0,0.6);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 1rem 0;
+            font-weight: 600;
         }
 
         .cta-button {
@@ -103,6 +114,66 @@
             left: 50%;
             transform: translateX(-50%);
             animation: bounce 2s infinite;
+        }
+
+        /* Price Section */
+        .price-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #1a3a1b, var(--primary-color));
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .price-badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .price-value {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 1rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-family: 'Playfair Display', serif;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .price-conditions {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            font-weight: 300;
+        }
+
+        .price-highlight {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .price-highlight p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
         }
 
         /* Features Section */
@@ -156,33 +227,65 @@
             font-size: 1.3rem;
         }
 
-        /* Specifications */
-        .specifications {
+        /* Gallery Section */
+        .gallery {
             padding: 5rem 2rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: var(--white);
+            background: var(--light);
         }
 
-        .specs-grid {
+        .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
             margin-top: 3rem;
         }
 
-        .spec-item {
-            background: rgba(255,255,255,0.1);
-            padding: 1.5rem;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
+        .gallery-item {
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
-        .spec-item strong {
-            display: block;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: var(--accent-color);
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover::before {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+        }
+
+        .gallery-item span {
+            background: rgba(0,0,0,0.8);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-weight: 600;
+            z-index: 2;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         /* Location Section */
@@ -265,48 +368,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Gallery Section */
-        .gallery {
-            padding: 5rem 2rem;
-            background: var(--light);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 3rem;
-        }
-
-        .gallery-item {
-            height: 300px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .gallery-item span {
-            background: rgba(0,0,0,0.7);
-            padding: 1rem 2rem;
-            border-radius: 10px;
-            font-weight: 600;
-        }
-
         /* Contact Section */
         .contact {
             padding: 5rem 2rem;
@@ -327,8 +388,7 @@
 
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
+            margin-bottom: 0.5 600;
         }
 
         .form-group input,
@@ -411,6 +471,15 @@
             }
         }
 
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
@@ -429,15 +498,22 @@
                 font-size: 2rem;
             }
 
+            .price-value {
+                font-size: 2.5rem;
+            }
+
             .location-content {
                 grid-template-columns: 1fr;
             }
 
             .features-grid,
-            .specs-grid,
             .investment-grid,
             .gallery-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .gallery-item {
+                height: 250px;
             }
         }
 
@@ -475,11 +551,42 @@
             <h1>Viva o Melhor de Três Coroas</h1>
             <p class="subtitle">com Conforto e Vista Deslumbrante para as Montanhas!</p>
             <p class="highlight">Apartamento Premium de 142m²</p>
+            <div class="price-info">
+                💰 <strong>Valor: R$ 490.000,00</strong><br>
+                <small>Estudamos condições de pagamento facilitadas!</small>
+            </div>
             <p>Localização Privilegiada no Centro | 3 Suítes Exclusivas | Próximo a Gramado</p>
             <a href="#contact" class="cta-button">Agende Sua Visita Exclusiva</a>
         </div>
         <div class="scroll-indicator">
             <span style="font-size: 2rem;">↓</span>
+        </div>
+    </section>
+
+    <!-- Price Section -->
+    <section class="price-section" id="price">
+        <div class="price-container">
+            <span class="price-badge">✨ Oportunidade Única na Serra Gaúcha</span>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Invista no Seu Futuro Hoje</h2>
+
+            <div class="price-value">R$ 490.000</div>
+
+            <p class="price-conditions">
+                <strong>💳 Estudamos Todas as Condições de Pagamento!</strong>
+            </p>
+
+            <div class="price-highlight">
+                <p>✅ <strong>Financiamento Bancário</strong> - Até 80% do valor</p>
+                <p>✅ <strong>Parcelamento Direto</strong> - Até 24x com a construtora</p>
+                <p>✅ <strong>Aceitamos Imóvel</strong> - Como parte do pagamento</p>
+                <p>✅ <strong>Desconto à Vista</strong> - Condições especiais</p>
+            </div>
+
+            <a href="#contact" class="cta-button" style="margin-top: 2rem;">Consultar Minha Condição Personalizada</a>
+
+            <p style="margin-top: 2rem; font-size: 0.95rem; opacity: 0.9;">
+                <em>Entre em contato e descubra a melhor forma de realizar seu sonho!</em>
+            </p>
         </div>
     </section>
 
@@ -522,44 +629,44 @@
         </div>
     </section>
 
-    <!-- Specifications -->
-    <section class="specifications">
+    <!-- Gallery Section - IMAGENS COM LINKS CORRIGIDOS -->
+    <section class="gallery">
         <div class="container">
-            <h2 class="section-title">Layout Perfeito para Seu Estilo de Vida</h2>
-            <div class="specs-grid">
-                <div class="spec-item">
-                    <strong>Área Privativa</strong>
-                    <p>142m² de espaço inteligente e bem distribuído</p>
+            <h2 class="section-title">Conheça Seu Futuro Lar</h2>
+            <div class="gallery-grid">
+                <!-- FACHADA -->
+                <div class="gallery-item" style="background-image: url('https://lh3.googleusercontent.com/d/1F71eYJO2_AZj68FhMeVFzTeQNP-oHyLb');">
+                    <span>🏢 Fachada Elegante</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Suítes Exclusivas</strong>
-                    <p>3 suítes completas (1 Master + 2 Americanas)</p>
+
+                <!-- SALA DE ESTAR -->
+                <div class="gallery-item" style="background-image: url('https://lh3.googleusercontent.com/d/16JwsIzExA1n0GTx4B1Zu0Aesh2zCQKQs');">
+                    <span>Garagem</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Área Social Integrada</strong>
-                    <p>Sala de estar, jantar e cozinha em conceito aberto e fluido</p>
+
+                <!-- COZINHA -->
+                <div class="gallery-item" style="background-image: url('https://lh3.googleusercontent.com/d/1TRAXeGO_S1mTQXIBvmloGKreY42Rp7pR');">
+                    <span>👨‍🍳Estar e Jantar</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Cozinha Moderna</strong>
-                    <p>Integrada e projetada para o seu dia a dia</p>
+
+                <!-- SUÍTE -->
+                <div class="gallery-item" style="background-image: url('https://lh3.googleusercontent.com/d/1xhj1OQIr00Lu7hhEZ9sDQ_cVczhzH8io');">
+                    <span>Acesso</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Lavanderia Funcional</strong>
-                    <p>Com acesso externo para máxima praticidade</p>
+
+                <!-- SACADA -->
+                <div class="gallery-item" style="background-image: url('https://lh3.googleusercontent.com/d/1v6rfKl_ibO9MVZ0qqcIMBt4QaVvfx_BN');">
+                    <span> Elevador</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Lavabo Elegante</strong>
-                    <p>Para receber com sofisticação</p>
-                </div>
-                <div class="spec-item">
-                    <strong>Sacada Panorâmica</strong>
-                    <p>20m² com vista privilegiada para as montanhas</p>
-                </div>
-                <div class="spec-item">
-                    <strong>Área Gourmet</strong>
-                    <p>Churrasqueira completa para seus melhores momentos</p>
+
+                <!-- ÁREA GOURMET -->
+                <div class="gallery-item" style="background-image: url('https://lh3.googleusercontent.com/d/1uTm4cO0pCM6crB0y1EJ3Xe1IQrq6QGsW');">
+                    <span>Vista</span>
                 </div>
             </div>
+            <p style="text-align: center; margin-top: 2rem; color: var(--primary-color);">
+                <em>✨ Imagens reais do imóvel. Agende sua visita particular para vivenciar cada detalhe!</em>
+            </p>
         </div>
     </section>
 
@@ -619,36 +726,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <div class="container">
-            <h2 class="section-title">Viva Esta Experiência</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <span>🏢 Fachada Elegante do Edifício</span>
-                </div>
-                <div class="gallery-item">
-                    <span>🛋️ Sala de Estar Integrada</span>
-                </div>
-                <div class="gallery-item">
-                    <span>👨‍🍳 Cozinha Moderna e Funcional</span>
-                </div>
-                <div class="gallery-item">
-                    <span>🛏️ Suíte Master Luxuosa</span>
-                </div>
-                <div class="gallery-item">
-                    <span>🍽️ Área Social Espaçosa</span>
-                </div>
-                <div class="gallery-item">
-                    <span>🌄 Vista Panorâmica da Sacada</span>
-                </div>
-            </div>
-            <p style="text-align: center; margin-top: 2rem; color: var(--primary-color);">
-                <em>* Imagens ilustrativas. Agende sua visita particular para vivenciar cada detalhe!</em>
-            </p>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -671,7 +748,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Como podemos ajudá-lo hoje?</label>
-                    <textarea id="message" name="message" placeholder="Gostaria de agendar uma visita... Conhecer valores... Informações de financiamento..."></textarea>
+                    <textarea id="message" name="message" placeholder="Gostaria de agendar uma visita... Conhecer condições de pagamento... Informações de financiamento..."></textarea>
                 </div>
                 <button type="submit" class="submit-button">Quero Mais Informações</button>
             </form>
@@ -700,7 +777,7 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/5551981210200?text=Olá!%20Vi%20o%20apartamento%20em%20Três%20Coroas%20e%20gostaria%20de%20mais%20informações.%20Você%20tem%20disponibilidade%20para%20uma%20visita?" 
+    <a href="https://wa.me/5551981210200?text=Olá!%20Vi%20o%20apartamento%20de%20R$%20490.000%20em%20Três%20Coroas%20e%20gostaria%20de%20mais%20informações!" 
        class="whatsapp-float" 
        target="_blank"
        title="Fale conosco no WhatsApp">
@@ -731,13 +808,10 @@
             const phone = document.getElementById('phone').value;
             const message = document.getElementById('message').value;
 
-            // Criar mensagem para WhatsApp
-            const whatsappMessage = `Olá! Meu nome é ${name}.%0A%0AEmail: ${email}%0ATelefone: ${phone}%0A%0AMensagem: ${message || 'Gostaria de mais informações sobre o apartamento em Três Coroas.'}`;
+            const whatsappMessage = `Olá! Meu nome é ${name}.%0A%0AEmail: ${email}%0ATelefone: ${phone}%0A%0AMensagem: ${message || 'Gostaria de mais informações sobre o apartamento de R$ 490.000 em Três Coroas.'}`;
 
-            // Redirecionar para WhatsApp
             window.open(`https://wa.me/5551981210200?text=${whatsappMessage}`, '_blank');
 
-            // Feedback visual
             const button = this.querySelector('.submit-button');
             const originalText = button.textContent;
             button.textContent = 'Redirecionando para WhatsApp...';
@@ -748,28 +822,6 @@
                 button.style.background = '';
                 this.reset();
             }, 3000);
-        });
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.feature-card, .spec-item, .investment-card, .gallery-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
         });
     </script>
 </body>
